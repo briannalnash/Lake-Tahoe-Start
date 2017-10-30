@@ -1,0 +1,207 @@
+@font-face {
+	font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+
+/* ======================
+Base Styles
+========================= */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	line-height: 1.5;
+	color: #878787;
+	margin: 0;
+}
+
+header {
+	height: 860px;
+	padding-top: 170px;
+	background: linear-gradient(#ffa949, transparent 90%),
+	            linear-gradient(0deg, #fff, transparent),
+							#ffa949 url('../img/mountains.jpg') no-repeat center;
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+header span {
+	color: white;
+  border-bottom: 2px solid;
+	font-size: 26px;
+  letter-spacing: 1.3px;
+  line-height: 2;
+  padding-bottom: 10px;
+  font-weight: lighter;
+}
+
+h1,
+h2 {
+	font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 5.65rem;
+	font-weight: normal;
+	margin-top: 24px;
+  line-height: 1;
+  text-shadow: 0 1px 0 rgba(0,0,0,.3);
+}
+
+h2 {
+	font-size: 3.2rem;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+a:link {
+	text-decoration: none;
+	color: #FFA949;
+}
+
+ol,
+ul {
+	margin: 30px 0;
+}
+
+li {
+	padding-bottom: 10px;
+}
+
+/* ======================
+Layout Styles
+========================= */
+
+.arrow {
+	width: 2.5em;
+}
+
+.intro {
+	font-size: 1.25em;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.wildlife {
+	color: white;
+	padding: 18% 24%;
+	margin: 50px 0 20px;
+	background: url('../img/bear.jpg') no-repeat center;
+	background-size: cover;
+	text-align: left;
+	border-top: 10px solid #ffa949;
+	border-radius: 50px 10px;
+}
+
+.callout {
+	font-size: 1.25em;
+	border-bottom: 3px solid;
+	padding: 0 9px 3px 9px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.primary-content {
+	padding-top: 20px;
+	padding-bottom: 90px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid #dfe2e6;
+}
+
+.primary-content,
+.secondary-content {
+	max-width: 960px;
+	margin: auto;
+	width: 75%;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.t-border {
+	border-top: 2px solid #dfe2e6;
+}
+
+.group:after {
+	clear: both;
+	display: table;
+	content: "";
+}
+
+.main-footer {
+	text-align: center;
+	padding: 20px 0 50px;
+	border-bottom: 10px solid #ffa949;
+}
+
+/* ======================
+Float Styles
+========================= */
+
+.resorts,
+.tips {
+	width: 45%;
+}
+
+.resorts {
+	float: left;
+}
+
+.tips {
+	float: right;
+}
+
+/* ======================
+Media Queries Styles
+========================= */
+
+@media (max-width: 1024px) {
+	.primary-content,
+	.secondary-content {
+		width: 90%;
+	}
+	.wildlife {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
+	.callout {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.primary-content,
+	.secondary-content {
+		width: 100%;
+	}
+	header {
+		height: 360px;
+		padding: 50px 0 20px;
+	}
+	h1 {
+		font-size: 4.5rem;
+	}
+	.title {
+		font-size: 1.2rem;
+	}
+	.tips,
+	.resorts {
+		float: none;
+		width: 100%;
+	}
+}
